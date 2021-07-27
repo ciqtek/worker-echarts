@@ -1,0 +1,8 @@
+{
+  "source": {
+    "include": "./src",
+    "includePattern": ".+\\index.js(doc|x)?$",
+    "excludePattern": "(node_modules/|docs)",
+    "exclude":["./src/save-json/index.js"]
+  }
+}

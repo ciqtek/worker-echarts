@@ -1,0 +1,55 @@
+{
+  "name": "worker-echarts",
+  "version": "0.0.3",
+  "description": "worker for echarts",
+  "main": "dist/index.umd.js",
+  "types": "types/index.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "test": "npm run build && jest",
+    "build:doc":"jsdoc2md -t ./README.hbs ./src/index.js > README.md"
+  },
+  "files":[
+    "src",
+    "types",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ciqtek/worker-echarts.git"
+  },
+  "keywords": [
+    "echarts",
+    "webWorker"
+  ],
+  "author": "\"国仪量子（合肥）技术有限公司（xx@ciqtek.com）\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ciqtek/worker-echarts/issues"
+  },
+  "homepage": "https://github.com/ciqtek/worker-echarts#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/runtime-corejs3": "^7.14.7",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^19.0.1",
+    "@rollup/plugin-html": "^0.2.3",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.2",
+    "babel-jest": "^27.0.6",
+    "jest": "^27.0.6",
+    "jsdoc-to-markdown": "^7.0.1",
+    "jsdom-worker": "^0.2.1",
+    "node-fetch": "^2.6.1",
+    "rollup": "^2.53.1",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-web-worker-loader": "^1.6.1",
+    "typescript": "^4.3.5"
+  }
+}
